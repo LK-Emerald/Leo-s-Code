@@ -1,0 +1,402 @@
+English	Fira	Logic	Formula	Matches?	Notes
+_Feminine	a	-	a	=IF(D2=B2, "Y", "N")	Constructor Word
+_Instance	v	-	v	=IF(D3=B3, "Y", "N")	Constructor Word
+_Masculine	ī	-	ī	=IF(D4=B4, "Y", "N")	Constructor Word
+_Neutral	ū	-	ū	=IF(D5=B5, "Y", "N")	Constructor Word
+_Object	p	-	p	=IF(D6=B6, "Y", "N")	Constructor Word
+_Opposite Quality	ƶyṉe	-	=lower(createWord("Of + Not", 0))	=IF(D7=B7, "Y", "N")	Constructor Word
+_Passive Valency	eo	-	eo	=IF(D8=B8, "Y", "N")	Constructor Word
+_Past Tense	łem	-	łem	=IF(D9=B9, "Y", "N")	Constructor Word
+_Place	iamī	-	=addGender("iam", "m")	=IF(D10=B10, "Y", "N")	Constructor Word
+_Plural	o	-	o	=IF(D11=B11, "Y", "N")	Constructor Word
+_Subject	ş	-	ş	=IF(D12=B12, "Y", "N")	Constructor Word
+_Verb	e	-	e	=IF(D13=B13, "Y", "N")	Constructor Word
+Above	Nabū	-	=addGender("Nab", "n")	=IF(D14=B14, "Y", "N")	-
+Acid	Çepłynī	Flame + Liquid	=createWord($C15)	=IF(D15=B15, "Y", "N")	A liquid that burns
+Air	Ƶyami	Of + Sky	=createWord($C16, 0, 4)	=IF(D16=B16, "Y", "N")	-
+And	Veƶ	-	Veƶ	=IF(D17=B17, "Y", "N")	-
+Anger	Çesaşƶy	Fire + Emotion	=createWord($C18)	=IF(D18=B18, "Y", "N")	-
+Animal	Deṉī	-	=addGender("Deṉ", "m")	=IF(D19=B19, "Y", "N")	-
+Apart	Pemera	-	=addGender("Pemer", "f")	=IF(D20=B20, "Y", "N")	-
+Apartment	Skobamī	Small + House	=createWord($C21, 1, 4)	=IF(D21=B21, "Y", "N")	-
+Armour	Kryałurī	Protection + Cloth	=createWord($C22, 3, 1)	=IF(D22=B22, "Y", "N")	-
+At	Yopam	Owning + _Place	=sliceWord(createWord(C23, 3, 1), 0, -1)	=IF(D23=B23, "Y", "N")	-
+Autumn	Retsa	-	=addGender("Rets", "f")	=IF(D24=B24, "Y", "N")	Season
+Beginning	Poṉū	-	=addGender("Poṉ", "n")	=IF(D25=B25, "Y", "N")	-
+Bell	Buomī	-	=addGender("Buom", "m")	=IF(D26=B26, "Y", "N")	Onomatopoeia of the sound a large bell makes
+Below	Ṉebū	Not + Above	=createWord($C27, 0, 2)	=IF(D27=B27, "Y", "N")	-
+Big	Dētema	-	=addGender("Dētem", "f")	=IF(D28=B28, "Y", "N")	-
+Bird	Denabū	Creature + High	=createWord($C29, 2, 0)	=IF(D29=B29, "Y", "N")	-
+Black	Ciłeṉū	All + Dark	=createWord($C30)	=IF(D30=B30, "Y", "N")	-
+Body	Saşami	Person + _Place	=createWord($C31, 3, 1)	=IF(D31=B31, "Y", "N")	-
+Bottom	Sopī	-	=addGender("Sop", "m")	=IF(D32=B32, "Y", "N")	As in 'base' (not arse)
+Building	Yopzemī	Join + Rock	=createWord($C33)	=IF(D33=B33, "Y", "N")	-
+But	Ṉveƶ	Not + And	=createWord($C34, 1)	=IF(D34=B34, "Y", "N")	-
+Cabin	Saşkniamī	Woods + House	=createWord($C35, 3, 3)	=IF(D35=B35, "Y", "N")	-
+Castle	Krytiamī	Protection + House	=createWord($C36, 3, 2)	=IF(D36=B36, "Y", "N")	-
+Cat	Yuzabdeṉī	Rodent + Killer + Animal	=createWord($C37, 3, 0)	=IF(D37=B37, "Y", "N")	-
+Chest	Brenla	-	=addGender("Brenl", "f")	=IF(D38=B38, "Y", "N")	-
+Chin	Sopaşfra	Bottom + Head	=createWord($C39, 1, 1)	=IF(D39=B39, "Y", "N")	-
+Circuit	Łaciłeta	Tool + Circle	=createWord($C40)	=IF(D40=B40, "Y", "N")	-
+Clay	Yopzezemī	To Build + Rock	=createWord($C41)	=IF(D41=B41, "Y", "N")	Rock that is easy to build/model with
+Cloth	Załurī	-	=addGender("Załur", "m")	=IF(D42=B42, "Y", "N")	-
+Cold	Ṉeda	Without + Heat	=createWord($C43, 1, 2)	=IF(D43=B43, "Y", "N")	-
+Colour	Cr̄oma	-	=addGender("Cr̄om", "f")	=IF(D44=B44, "Y", "N")	-
+Colourless	Ṉecr̄oma	Not + Colour	=createWord($C45, 0)	=IF(D45=B45, "Y", "N")	-
+Core	Łaƶçū	Metal + Heart	=createWord($C46, 4, 4)	=IF(D46=B46, "Y", "N")	-
+Could	Ƶapeçima	Some + Time	=createWord($C47)	=IF(D47=B47, "Y", "N")	It will happen in some of the possible futures
+Countryside	Ƶetmi	Field + Land	=createWord($C48, 4, 3)	=IF(D48=B48, "Y", "N")	-
+Cut	Zuvi	M Instance of To Cut	=stringWord(sliceWord(createWord($C49, 0), 0, -4), "vi", "")	=IF(D49=B49, "Y", "N")	=createWord($C49, 0)
+Dagger	Çełazuvi	Hand + Sword	=createWord($C50, 4)	=IF(D50=B50, "Y", "N")	A blade that can be hidden in a person's hand
+Dark	Ṉū	Not + Light	=createWord($C51, 1, 3)	=IF(D51=B51, "Y", "N")	-
+Day	Şeçima	Light + Time	=createWord($C52)	=IF(D52=B52, "Y", "N")	-
+Dead	Kraçu	-	Kraçu	=IF(D53=B53, "Y", "N")	-
+Defence	Ramnoşeda	Home + Group	=createWord($C54, 3, 1)	=IF(D54=B54, "Y", "N")	-
+Desert	Mnolnozemī	Many + Sand	=createWord($C55, 2, 1)	=IF(D55=B55, "Y", "N")	-
+Destination	Metiakeşa	Place + To Go	=addGender(createWord($C56), "f", TRUE)	=IF(D56=B56, "Y", "N")	-
+Digit	Ƶepa	-	=AddGender("Ƶep", "F")	=IF(D57=B57, "Y", "N")	-
+Dining Room	Çyiami	Food + _Place	=createWord($C58)	=IF(D58=B58, "Y", "N")	-
+Dirt	Ƶkazemī	Plant + Rock	=createWord($C59)	=IF(D59=B59, "Y", "N")	-
+Dog	Ƶradeṉī	Happy + Animal	=createWord($C60)	=IF(D60=B60, "Y", "N")	-
+Dragon	Naniƶmī	Sky + Wurm	=createWord($C61, 3)	=IF(D61=B61, "Y", "N")	-
+Dress	Dētałurba	Large + Skirt	=createWord($C62, 3, 2)	=IF(D62=B62, "Y", "N")	-
+Drink	Navodepī	M Object of To Drink	=createWord($C63, 0)	=IF(D63=B63, "Y", "N")	-
+Eight	Devyū	-	=addGender("Devy", "n")	=IF(D64=B64, "Y", "N")	Number
+Eighty	Devyū-Pū	80	=numberWord(C65)	=IF(D65=B65, "Y", "N")	-
+Emotion	Saşƶy	Person + Of	=createWord($C66, 3)	=IF(D66=B66, "Y", "N")	-
+Empire	Nabedemi	Emperor + _Place	=createWord($C67, 2, 2)	=IF(D67=B67, "Y", "N")	Place of emperors
+End	Ṉepoṉū	Not + Beginning	=createWord($C68, 0)	=IF(D68=B68, "Y", "N")	-
+Equality	Şūƶymuşū	One + Towards + One	=multiCompoundWord(0, "One", "Towards", 2, "One")	=IF(D69=B69, "Y", "N")	-
+Everyday	Everyday	Each + Day	=createWord($C70, 0, 0)	=IF(D70=B70, "Y", "N")	Won't work until 'each' has been defined
+Constant	Ciłeşeçima	All + Day	=createWord($C71)	=IF(D71=B71, "Y", "N")	-
+Everywhere	Ciłeiami	All + _Place	=createWord($C72)	=IF(D72=B72, "Y", "N")	-
+Family	SƵR	-	=concatenate(sliceWord(engToFira("Person"), 0, 1), sliceWord(engToFira("Of"), 0, 1), sliceWord(engToFira("Home"), 0, 1))	=IF(D73=B73, "Y", "N")	=CONCATENATE("Shorthand for ", engToFira("Person"), " ", engToFira("Of"), " ", engToFira("Home"), " (Person + Of + Home)")
+Farm	Deṉatiamī	Animal + House	=createWord($C74, 1, 1)	=IF(D74=B74, "Y", "N")	-
+Fast	Ƶymurīeda	Of + Speed	=createWord($C75, 0)	=IF(D75=B75, "Y", "N")	-
+Fat	Tłabū	-	=addGender("Tłab", "n")	=IF(D76=B76, "Y", "N")	-
+Field	Ƶkami	Grass + _Place	=createWord($C77, 3, 2)	=IF(D77=B77, "Y", "N")	-
+Fiery	Ƶyçemo	Of + Fire	=createWord($C78, 0)	=IF(D78=B78, "Y", "N")	-
+Fifty	Cavū-Pū	50	=numberWord(C79)	=IF(D79=B79, "Y", "N")	-
+Fighter	Saşbieda	Person + Heat	=createWord($C80, 3)	=IF(D80=B80, "Y", "N")	-
+Fire	Çemo	Flame + _Plural	=createWord($C81, 1)	=IF(D81=B81, "Y", "N")	-
+Fish	Napłydeṉī	Water + Animal	=createWord($C82)	=IF(D82=B82, "Y", "N")	-
+Five	Cavū	-	=addGender("Cav", "n")	=IF(D83=B83, "Y", "N")	Number
+Flame	Çema	-	=addGender("Çem", "f")	=IF(D84=B84, "Y", "N")	-
+Food	Çymī	-	=addGender("Çym", "m")	=IF(D85=B85, "Y", "N")	-
+Forever	Loçū	-	=addGender("Loç", "N")	=IF(D86=B86, "Y", "N")	-
+Four	Ştū	-	=addGender("Şt", "n")	=IF(D87=B87, "Y", "N")	Number
+Fourty	Ştū-Pū	40	=numberWord(C88)	=IF(D88=B88, "Y", "N")	-
+Free	Ƶyraçū	Of + Freedom	=createWord($C89, 0, 2)	=IF(D89=B89, "Y", "N")	-
+Freedom	Naraçū	High + Life	=createWord($C90)	=IF(D90=B90, "Y", "N")	-
+Freeze	Ciłeda	All + Cold	=createWord($C91, 2, 2)	=IF(D91=B91, "Y", "N")	-
+From	Ṉmurī	Not + Towards	=createWord($C92, 1, 2)	=IF(D92=B92, "Y", "N")	-
+Garden	Rati	House + Field	=createWord($C93, 4, 4)	=IF(D93=B93, "Y", "N")	-
+Glass	Zovezemī	Seeing + Rock	=createWord($C94, 4, 0)	=IF(D94=B94, "Y", "N")	Seeing Rock
+God	Saba	Person + Knowledge	=createWord($C95, 4, 3)	=IF(D95=B95, "Y", "N")	-
+Grass	Ƶkałmi	Plant + Ground	=createWord($C96, 1, 4)	=IF(D96=B96, "Y", "N")	-
+Grey	Şenūṉū	Light + Dark	=createWord($C97, 0)	=IF(D97=B97, "Y", "N")	-
+Ground	Zemami	Rock + _Place	=createWord($C98, 1, 1)	=IF(D98=B98, "Y", "N")	-
+Group	Mnoşeda	Many + Person	=createWord($C99, 3, 2)	=IF(D99=B99, "Y", "N")	-
+Grow	Ƶyvema	More + Big	=createWord($C100, 3, 3)	=IF(D100=B100, "Y", "N")	-
+Hamster	Tłayurşī	Fat + Rodent	=createWord($C101)	=IF(D101=B101, "Y", "N")	-
+Hand	Çełana	Meta + Tool	=createWord($C102)	=IF(D102=B102, "Y", "N")	Tool that you use in order to use other tools
+Happy	Ƶraçū	Of + Joy	=createWord($C103, 1)	=IF(D103=B103, "Y", "N")	-
+Hard	Ƶyzemī	Of + Rock	=createWord($C104, 0)	=IF(D104=B104, "Y", "N")	-
+Harmony	Yopciłeta	Together + Whole	=createWord($C105)	=IF(D105=B105, "Y", "N")	-
+Harvest	Upūçymī	To Hold + Food	=createWord($C106, 1, 1)	=IF(D106=B106, "Y", "N")	-
+Hat	Laşfałurī	Head + Wrap	=createWord($C107, 2, 1)	=IF(D107=B107, "Y", "N")	-
+He	Renī	-	=addGender("Ren", "m")	=IF(D108=B108, "Y", "N")	-
+Head	Laşfra	-	=AddGender("Laşfr", "f")	=IF(D109=B109, "Y", "N")	-
+Heart	Łamaƶçū	Tool + Love	=createWord($C110)	=IF(D110=B110, "Y", "N")	-
+Heat	Bieda	-	=addGender("Bied", "f")	=IF(D111=B111, "Y", "N")	-
+Held	Upūça	To Be + Near	=addGender(createWord($C112, 2, 2), "F")	=IF(D112=B112, "Y", "N")	-
+Hello	Çizov'una	-	=concatenate(sliceWord(engToFira("To Meet"),0,5), "'", sliceWord(engToFira("You_Sing"),1))	=IF(D113=B113, "Y", "N")	Lit. "I Meet You"
+Her	Ƶrena	Of + She	=createWord($C114, 1)	=IF(D114=B114, "Y", "N")	-
+Here	Metopa	Place + Me	=createWord($C115, 4, 1)	=IF(D115=B115, "Y", "N")	-
+Herself	Çerena	Meta + She	=createWord($C116)	=IF(D116=B116, "Y", "N")	-
+Hiding	Ṉvereva	F Instance of To Hide	=createWord($C117, 0)	=IF(D117=B117, "Y", "N")	-
+Hill	Skoemībū	Small + Mountain	=createWord($C118, 2, 1)	=IF(D118=B118, "Y", "N")	-
+Him	Ƶrenī	Of + He	=createWord($C119, 1)	=IF(D119=B119, "Y", "N")	-
+Himself	Çerenī	Meta + He	=createWord($C120)	=IF(D120=B120, "Y", "N")	-
+Holy	Ƶy Saba	Of God	=stringWord("Of", "God", " ")	=IF(D121=B121, "Y", "N")	-
+Home	Rametī	Life + Place	=addGender(sliceWord(createWord($C122), 0, -4), "m")	=IF(D122=B122, "Y", "N")	-
+Horse	Mudeṉī	Motion + Animal	=createWord($C123)	=IF(D123=B123, "Y", "N")	-
+House	Ratiamī	Home + Place	=createWord($C124, 4, 2)	=IF(D124=B124, "Y", "N")	-
+Hunter	Zabedeṉī	Killer + Animal	=createWord($C125)	=IF(D125=B125, "Y", "N")	Person who kills animals
+I	Ropa	-	=addGender("Rop", "f")	=IF(D126=B126, "Y", "N")	-
+Ice	Zempłynī	Solid + Water	=createWord($C127, 1, 2)	=IF(D127=B127, "Y", "N")	-
+If	Puytmī	Query + Path	=createWord($C128, 1, 6)	=IF(D128=B128, "Y", "N")	-
+Inside	Yopiami	In + _Place	=createWord($C129)	=IF(D129=B129, "Y", "N")	-
+Instant	Pūçima	Zero + Time	=createWord($C130, 0)	=IF(D130=B130, "Y", "N")	-
+It	Renū	-	=addGender("Ren", "n")	=IF(D131=B131, "Y", "N")	-
+Itself	Çerenū	Meta + It	=createWord($C132)	=IF(D132=B132, "Y", "N")	-
+Jumper	Ƶynłura	Warm + Shirt	=createWord($C133, 4, 3)	=IF(D133=B133, "Y", "N")	-
+Jungle	Dētaşknabū	Large + Forest	=createWord($C134, 3, 1)	=IF(D134=B134, "Y", "N")	Often shortened to Dētaş or Dētaşū
+Killer	Zabeşī	M Subject of To Kill	=createWord($C135, 0)	=IF(D135=B135, "Y", "N")	-
+Knowledge	Saşba	-	=addGender("Saşb", "f")	=IF(D136=B136, "Y", "N")	-
+Law	Saşmetī	Knowledge + Home	=createWord($C137, 2, 2)	=IF(D137=B137, "Y", "N")	-
+Leg	Yabī	-	=addGender("Yab", "m")	=IF(D138=B138, "Y", "N")	-
+Leisure	Ṉemurma	Still + Time	=createWord($C139, 1, 2)	=IF(D139=B139, "Y", "N")	-
+Less	Ṉolyo	Not + Many	=createWord($C140, 1, 2)	=IF(D140=B140, "Y", "N")	-
+Life	Raçū	-	=addGender("Raç", "n")	=IF(D141=B141, "Y", "N")	-
+Lifetime	Raçima	Life + Time	=createWord($C142)	=IF(D142=B142, "Y", "N")	-
+Light	Şenū	-	=addGender("Şen", "n")	=IF(D143=B143, "Y", "N")	-
+Lightning	Łanabū	Tool + High	=createWord($C144)	=IF(D144=B144, "Y", "N")	Weapon of the Skies
+Limiter	Ṉepoṉeşa	F Subject of To End	=createWord($C145, 0)	=IF(D145=B145, "Y", "N")	Lit. "Ender"
+Liquid	Płynī	-	=addGender("Płyn", "m")	=IF(D146=B146, "Y", "N")	-
+Love	Maƶçū	User + Life	=createWord($C147, 4, 2)	=IF(D147=B147, "Y", "N")	-
+Low	Ṉabū	Not + High	=createWord($C148, 1, 1)	=IF(D148=B148, "Y", "N")	-
+Machine	Łaciłełana	Circuit + Tool	=createWord($C149)	=IF(D149=B149, "Y", "N")	-
+Magic	Şūfa	-	=addGender("Şūf", "f")	=IF(D150=B150, "Y", "N")	-
+Many	Mnolyo	-	=addGender("Mnoly", "p")	=IF(D151=B151, "Y", "N")	-
+Market	Vanapremi	Trade + _Place	=createWord($C152, 2, 2)	=IF(D152=B152, "Y", "N")	-
+Memory	Łasaşba	Tool + Knowledge	=createWord($C153)	=IF(D153=B153, "Y", "N")	-
+Merchant	Saşaprevī	Person + Trade	=createWord($C154, 3, 3)	=IF(D154=B154, "Y", "N")	-
+Meta	Çekū	-	=addGender("Çek", "n")	=IF(D155=B155, "Y", "N")	-
+Metadata	Çesaşba	Meta + Data	=createWord($C156)	=IF(D156=B156, "Y", "N")	-
+Metal	Łazemī	Tool + Rock	=createWord($C157)	=IF(D157=B157, "Y", "N")	A rock that can be used to make tools / A rock with useful materials inside
+Mine	Pemezemī	Seperate + Rock	=createWord($C158)	=IF(D158=B158, "Y", "N")	-
+Monster	Potbī	-	=addGender("Potb", "m")	=IF(D159=B159, "Y", "N")	-
+More	Ƶyveƶū	Of + And	=addGender(createWord($C160, 0), "N")	=IF(D160=B160, "Y", "N")	-
+Motion	Murī	-	=addGender("Mur", "m")	=IF(D161=B161, "Y", "N")	-
+Mountain	Zemībū	Rock + High	=createWord($C162, 0, 2)	=IF(D162=B162, "Y", "N")	-
+Mouse	Ƶrayurşī	Happy + Rodent	=createWord($C163)	=IF(D163=B163, "Y", "N")	-
+Mud	Ƶkapłynī	Dirt + Wet	=createWord($C164, 4, 4)	=IF(D164=B164, "Y", "N")	-
+Music	Vymiba	Speaker + High	=addGender(createWord(C165, 2, 2), "f", TRUE)	=IF(D165=B165, "Y", "N")	Singing requires a person's voice to go higher than it normally would when talking
+Myself	Çeropa	Meta + I	=createWord($C166)	=IF(D166=B166, "Y", "N")	-
+Neck	Yopşama	Together + Body	=addGender(createWord($C167, 2, 2), "f", TRUE)	=IF(D167=B167, "Y", "N")	-
+Nine	Ṉonū	-	=addGender("Ṉon", "n")	=IF(D168=B168, "Y", "N")	Number
+Ninety	Ṉonū-Pū	90	=numberWord(C169)	=IF(D169=B169, "Y", "N")	-
+No	Ṉe	-	Ṉe	=IF(D170=B170, "Y", "N")	-
+Not-All	Ṉiłeta	Not + All	=createWord($C171, 1, 1)	=IF(D171=B171, "Y", "N")	-
+Nowhere	Pūmi	Zero + _Place	=createWord($C172, 0, 2)	=IF(D172=B172, "Y", "N")	-
+Number	Mnoƶepa	Many + Digit	=createWord($C173, 3)	=IF(D173=B173, "Y", "N")	-
+Ocean	Napłyami	Water + _Place	=createWord($C174, 2, 1)	=IF(D174=B174, "Y", "N")	-
+Of	Ƶy	-	Ƶy	=IF(D175=B175, "Y", "N")	-
+Old	Mnoçima	Many + Time	=createWord($C176, 3)	=IF(D176=B176, "Y", "N")	-
+One	Şū	-	=addGender("Ş", "n")	=IF(D177=B177, "Y", "N")	Number
+One Hundred	Şū-Pū-Ładū	100	=numberWord(C178)	=IF(D178=B178, "Y", "N")	Where multiple 0s are present use Zero followed by the number of zeroes
+Only	Ƶyşū	Of + One	=createWord($C179, 0)	=IF(D179=B179, "Y", "N")	-
+Orchard	Ƶknami	Tree + _Place	=createWord($C180, 2, 2)	=IF(D180=B180, "Y", "N")	-
+Ourselves	Çepoko	Meta + We	=createWord($C181)	=IF(D181=B181, "Y", "N")	-
+Out	Ṉopam	Not + At	=createWord($C182, 1, 1)	=IF(D182=B182, "Y", "N")	-
+Outside	Ṉepiami	Not + Inside	=createWord($C183, 0, 2)	=IF(D183=B183, "Y", "N")	-
+Owned	Yopepī	M Object of To Own	=createWord($C184, 0)	=IF(D184=B184, "Y", "N")	Due to noun-like-adjectives this can be used as a noun meaning 'an owned thing'
+Owner	Yopeşī	M Subject of To Own	=createWord($C185, 0)	=IF(D185=B185, "Y", "N")	-
+Owning	Yopeva	F Instance of To Own	=createWord($C186, 0)	=IF(D186=B186, "Y", "N")	-
+Palace	Nabedzemī	Emperor + Building	=createWord($C187, 3, 3)	=IF(D187=B187, "Y", "N")	-
+Pantheon	Saratiamī	God + House	=createWord($C188)	=IF(D188=B188, "Y", "N")	-
+Passion	Saşyope	Person + To Want	=createWord($C189, 3, 4)	=IF(D189=B189, "Y", "N")	-
+Passion	Ƶapeyda	To Want + Person	=createWord($C190, 3, 4)	=IF(D190=B190, "Y", "N")	-
+Path	Murtiamī	Motion + Place	=createWord($C191, 1, 2)	=IF(D191=B191, "Y", "N")	-
+Person	Saşeda	-	=addGender("Saşed", "f")	=IF(D192=B192, "Y", "N")	-
+Pet	Deratiamī	Animal + Of + House	=createWord($C193, 2)	=IF(D193=B193, "Y", "N")	-
+Pheonix	Çedenabū	Fire + Bird	=createWord($C194)	=IF(D194=B194, "Y", "N")	-
+Pilgrim	Sabikeşī	M Subject of To Pilgrimage	=concatenate(sliceWord(createWord($C195, 0), 0, -4), engToFira("_Subject"), engToFira("_Masculine"))	=IF(D195=B195, "Y", "N")	-
+Pilgrimage	Sabikevī	M Instance of To Pilgrimage	=concatenate(sliceWord(createWord($C196, 0), 0, -4), engToFira("_Instance"), engToFira("_Masculine"))	=IF(D196=B196, "Y", "N")	-
+Place	Metiamī	-	=addGender("Metiam", "m")	=IF(D197=B197, "Y", "N")	-
+Planet	Ciłetmi	Whole + Ground	=createWord($C198, 1, 4)	=IF(D198=B198, "Y", "N")	-
+Plant	Ƶkałī	-	=addGender("Ƶkał", "m")	=IF(D199=B199, "Y", "N")	-
+Port	Ṉemurami	Still + _Place	=createWord($C200, 1, 1)	=IF(D200=B200, "Y", "N")	As in 'ship dock'
+Potter	Saşezemī	Person + Clay	=createWord($C201, 3, 4)	=IF(D201=B201, "Y", "N")	-
+Power	Łaşenū	Tool + Light	=createWord($C202)	=IF(D202=B202, "Y", "N")	A way of powering circuits / A way of making your vision into reality
+Progress	Ciłeçmurī	Will + Towards	=createWord($C203, 3, 2)	=IF(D203=B203, "Y", "N")	-
+Protection	Kryevī	M Instance of To Protect	=createWord($C204, 0)	=IF(D204=B204, "Y", "N")	-
+Protectorate	Zemnoşeda	World + Group	=createWord($C205, 3)	=IF(D205=B205, "Y", "N")	-
+Query	Puyta	-	=addGender("Puyt", "f")	=IF(D206=B206, "Y", "N")	-
+Rabbit	Nakeşeṉī	To Jump + Animal	=createWord($C207, 1, 1)	=IF(D207=B207, "Y", "N")	-
+Rain	Nanapłynī	Sky + Water	=createWord($C208, 4, 1)	=IF(D208=B208, "Y", "N")	-
+Recording	Łacvymişa	Circuit + Speaker	=createWord($C209, 5)	=IF(D209=B209, "Y", "N")	-
+Reflection	Ƶoṉepū	N Object of To Reflect	=createWord($C210, 0)	=IF(D210=B210, "Y", "N")	-
+Regrowth	Ƶyvepoṉū	To Grow + Return	=createWord($C211, 2, 2)	=IF(D211=B211, "Y", "N")	-
+Reproduction	Yopūoṉū	To Produce + Return	=createWord($C212, 1, 3)	=IF(D212=B212, "Y", "N")	-
+Return	Kepoṉū	To Go + Start	=createWord($C213)	=IF(D213=B213, "Y", "N")	Going to the start = going back to where you came from - returning
+River	Napłmurī	Water + Wind	=createWord($C214, 3, 1)	=IF(D214=B214, "Y", "N")	-
+Robot	Łasaşeda	Tool + Person	=createWord($C215)	=IF(D215=B215, "Y", "N")	Mechanical Person
+Rock	Zemī	-	=addGender("Zem", "m")	=IF(D216=B216, "Y", "N")	-
+Rodent	Yurşī	-	=addGender("Yurş", "m")	=IF(D217=B217, "Y", "N")	-
+Rope	Łayopūç	Tool + Join	=createWord($C218)	=IF(D218=B218, "Y", "N")	A tool that joins obejcts together
+Sand	Mnozemī	Many + Rock	=createWord($C219, 3)	=IF(D219=B219, "Y", "N")	-
+Scarf	Załupşama	Cloth + Neck	=createWord($C220, 2, 2)	=IF(D220=B220, "Y", "N")	-
+Sea	Skoapłyami	Small + Ocean	=createWord($C221, 2, 1)	=IF(D221=B221, "Y", "N")	-
+Seaside	Napłozemī	Ocean + Sand	=createWord($C222, 4, 2)	=IF(D222=B222, "Y", "N")	-
+Seeing	Zovereva	F Instance of To See	=createWord($C223, 0)	=IF(D223=B223, "Y", "N")	-
+Seven	Şimū	-	=addGender("Şim", "n")	=IF(D224=B224, "Y", "N")	Number
+Seventy	Şimū-Pū	70	=numberWord(C225)	=IF(D225=B225, "Y", "N")	-
+She	Rena	-	=addGender("Ren", "f")	=IF(D226=B226, "Y", "N")	-
+Shirt	Brenłura	Chest + Cloth	=addGender(createWord($C227, 2, 2), "f", TRUE)	=IF(D227=B227, "Y", "N")	-
+Shoe	Sopkryevī	Foot + Protection	=createWord($C228, 1)	=IF(D228=B228, "Y", "N")	-
+Shorts	Skałurbī	Small + Trousers	=addGender(createWord($C229, 3, 1), "m", true)	=IF(D229=B229, "Y", "N")	Uses masc. ending (in contrast to Skirt)
+Should	Mnolçima	Many + Time	=createWord($C230)	=IF(D230=B230, "Y", "N")	It will happen in many (but not all) of the possible futures
+Simple	Bōvimū	-	=addGender("Bōvim", "n")	=IF(D231=B231, "Y", "N")	-
+Six	Łislū	-	=addGender("Łisl", "n")	=IF(D232=B232, "Y", "N")	Number
+Sixty	Łislū-Pū	60	=numberWord(C233)	=IF(D233=B233, "Y", "N")	-
+Skirt	Skałurba	Small + Trousers	=addGender(createWord($C234, 3, 1), "f", true)	=IF(D234=B234, "Y", "N")	Uses fem. ending (in contrast to Shorts)
+Sky	Naniami	Star + _Place	=createWord($C235, 1)	=IF(D235=B235, "Y", "N")	-
+Slow	Ƶymurieda	Of + Slowness	=createWord($C236, 0)	=IF(D236=B236, "Y", "N")	-
+Slowness	Murieda	Motion + Tired	=createWord($C237, 1, 3)	=IF(D237=B237, "Y", "N")	-
+Sly	Zişomna	-	=addGender("Zişomn", "f")	=IF(D238=B238, "Y", "N")	-
+Small	Skobī	-	=addGender("Skob", "m")	=IF(D239=B239, "Y", "N")	-
+Snake	Zişeda	-	=addGender("Zişed", "f")	=IF(D240=B240, "Y", "N")	-
+So	Lin	-	Lin	=IF(D241=B241, "Y", "N")	-
+Sock	Sopzałurī	Foot + Wrap	=createWord($C242, 1)	=IF(D242=B242, "Y", "N")	-
+Soft	Ƶyṉemī	_Opposite Quality + Rock	=createWord($C243, 1, 1)	=IF(D243=B243, "Y", "N")	-
+Solar System	Mnolciłetmi	Many + Planet	=createWord($C244)	=IF(D244=B244, "Y", "N")	-
+Some	Ƶapenū	-	=addGender("Ƶapen", "n")	=IF(D245=B245, "Y", "N")	-
+Song	Çimvymiba	Time + Music	=createWord($C246, 1)	=IF(D246=B246, "Y", "N")	A song is a contained definite piece of music
+Soul	Lotłū	-	=addGender("Lotł", "n")	=IF(D247=B247, "Y", "N")	-
+Space	Ciłetṉū	Whole + Darkness	=createWord($C248, 1)	=IF(D248=B248, "Y", "N")	-
+Speaker	Vymiçeşa	F Subject of To Speak	=stringWord(sliceWord(createWord($C249, 0), 0, -4), "şa", "")	=IF(D249=B249, "Y", "N")	=createWord(C249, 0)
+Speed	Murīeda	Motion + Energy	=createWord($C250, 0, 2)	=IF(D250=B250, "Y", "N")	-
+Spirit	Ƶyaçu	Air + Undead	=createWord($C251, 3, 3)	=IF(D251=B251, "Y", "N")	-
+Spring	Palta	-	=AddGender("Palt", "f")	=IF(D252=B252, "Y", "N")	Season
+Stable	Ƶtebī	-	=addGender("Ƶteb", "m")	=IF(D253=B253, "Y", "N")	i.e. Secure
+Star	Nanū	High + Light	=createWord($C254, 2, 2)	=IF(D254=B254, "Y", "N")	-
+Still	Ṉemurī	Not + Motion	=createWord($C255, 0)	=IF(D255=B255, "Y", "N")	As in 'not moving'
+Suit	Suit	Smart + Shirt	=createWord(C256, 0)	=IF(D256=B256, "Y", "N")	Unfinished until 'smart' is translated
+Summer	Viazda	-	=addGender("Viazd", "f")	=IF(D257=B257, "Y", "N")	Season
+Survive	Yopaçū	To Own + Life	=createWord($C258, 1, 1)	=IF(D258=B258, "Y", "N")	-
+Swimmer	Sanapłynī	Person + Motion + Water	=createWord($C259, 4, 0)	=IF(D259=B259, "Y", "N")	-
+Swimming Suit	Sanapłurī	To Swim + Wrap	=createWord($C260, 3, 3)	=IF(D260=B260, "Y", "N")	-
+Sword	Łazuvi	Tool + Cut	=createWord($C261)	=IF(D261=B261, "Y", "N")	-
+T-Shirt	Tī-Brenłura	-	=stringWord("Tī", engToFira("Shirt"))	=IF(D262=B262, "Y", "N")	-
+Temple	Sabiami	God + _Place	=createWord($C263, 1)	=IF(D263=B263, "Y", "N")	-
+Ten	Şū-Pū	10	=numberWord(C264)	=IF(D264=B264, "Y", "N")	Numbers with multiple digits are formed by saying the value of each digit in order
+The		-		=IF(D265=B265, "Y", "N")	Intentionally left blank. If no quantity is used before a noun then 'the' is assumed. Therefore no explicit word for 'the' is needed.
+Them	Ƶpeło	Of + They	=createWord($C266, 1)	=IF(D266=B266, "Y", "N")	-
+Themselves	Çepeło	Meta + They	=createWord($C267)	=IF(D267=B267, "Y", "N")	-
+There	Metuna	Place + You_Sing	=createWord($C268, 4, 1)	=IF(D268=B268, "Y", "N")	-
+They	Peło	-	=addGender("Peł", "p")	=IF(D269=B269, "Y", "N")	-
+Thief	Napreşī	M Subject of To Take	=createWord($C270, 0)	=IF(D270=B270, "Y", "N")	-
+Thirsty	Ciłeyna	To Need + Water	=addGender(createWord($C271, 4, 4), "f", TRUE)	=IF(D271=B271, "Y", "N")	-
+Thirty	Puivū-Pū	30	=numberWord(C272)	=IF(D272=B272, "Y", "N")	-
+Three	Puivū	-	=addGender("Puiv", "n")	=IF(D273=B273, "Y", "N")	Number
+Time	Çima	-	=addGender("Çim", "f")	=IF(D274=B274, "Y", "N")	-
+Tired	Ṉebieda	No + Energy	=createWord($C275, 0)	=IF(D275=B275, "Y", "N")	-
+To Adventure	Krīne	-	=addGender("Krīn", "v")	=IF(D276=B276, "Y", "N")	Name of month 8 of the Zemian calendar
+To Anger	Çesaşƶe	Verb of Anger	=createWord($C277, 0)	=IF(D277=B277, "Y", "N")	-
+To Be	Uçe	-	=addGender("Uç", "v")	=IF(D278=B278, "Y", "N")	-
+To Build	Yopzeme	Verb of Building	=createWord($C279, 0)	=IF(D279=B279, "Y", "N")	-
+To Cause	Dovaçe	-	=addGender("Dovaç", "v")	=IF(D280=B280, "Y", "N")	-
+To Complete	Ciłete	Verb of Complete	=createWord($C281, 0)	=IF(D281=B281, "Y", "N")	-
+To Continue	Loçe	Verb of Continual	=createWord($C282, 0)	=IF(D282=B282, "Y", "N")	Name of month 16 of the Zemian calendar
+To Cut	Zuçe	-	=addGender("Zuç", "v")	=IF(D283=B283, "Y", "N")	-
+To Die	Zabeo	Passive of "To Kill" (see Passive Valency)	=compoundWord("To Kill", "_Passive Valency", 1)	=IF(D284=B284, "Y", "N")	-
+To Drink	Navode	-	=addGender("Navod", "v")	=IF(D285=B285, "Y", "N")	-
+To End	Ṉepoṉe	Verb of End	=createWord($C286, 0)	=IF(D286=B286, "Y", "N")	-
+To Fight	Saşbiede	Verb of Fighter	=createWord($C287, 0)	=IF(D287=B287, "Y", "N")	-
+To Follow	Ƶymure	Verb of Towards	=createWord($C288, 0)	=IF(D288=B288, "Y", "N")	-
+To Freeze	Ciłede	Verb of Freeze	=createWord($C289, 0)	=IF(D289=B289, "Y", "N")	Name of month 15 of the Zemian calendar
+To Give	Vaşe	-	=addGender("Vaş", "v")	=IF(D290=B290, "Y", "N")	-
+To Go	Keşe	-	=addGender("Keş", "v")	=IF(D291=B291, "Y", "N")	-
+To Grow	Ƶyveme	Verb of Grow	=createWord($C292, 0)	=IF(D292=B292, "Y", "N")	Name of month 12 of the Zemian calendar
+To Harvest	Upūçyme	Verb of Harvest	=createWord($C293, 0)	=IF(D293=B293, "Y", "N")	Name of month 10 of the Zemian calendar
+To Hide	Ṉvere	Not + To See	=createWord($C294, 1, 2)	=IF(D294=B294, "Y", "N")	Name of month 11 of the Zemian calendar
+To Hold	Upūçe	Verb of Held	=createWord($C295, 0)	=IF(D295=B295, "Y", "N")	-
+To Hunt	Zabedeṉe	Verb of Hunter	=createWord($C296, 0)	=IF(D296=B296, "Y", "N")	-
+To Join	Yopūe	Verb of Join	=createWord($C297, 0)	=IF(D297=B297, "Y", "N")	-
+To Jump	Nakeşe	High + To Go	=createWord($C298)	=IF(D298=B298, "Y", "N")	-
+To Kill	Zabe	-	=addGender("Zab", "v")	=IF(D299=B299, "Y", "N")	-
+To Meet	Çizovere	Time + To See	=createWord($C300)	=IF(D300=B300, "Y", "N")	-
+To Mine	Pemezeme	Verb of Mine	=createWord($C301, 0)	=IF(D301=B301, "Y", "N")	-
+To Need	Ciłeyope	All + To Have	=createWord($C302)	=IF(D302=B302, "Y", "N")	-
+To Own	Yope	-	=addGender("Yop", "v")	=IF(D303=B303, "Y", "N")	-
+To Pilgrimage	Sabikeşe	Temple + To Go	=createWord($C304, 3)	=IF(D304=B304, "Y", "N")	-
+To Prepare	Valsmīe	-	=addGender("Valsmī", "v")	=IF(D305=B305, "Y", "N")	Name of month 1 of the Zemian calendar
+To Progress	Ciłeçmure	Verb of Progress	=createWord($C306, 0)	=IF(D306=B306, "Y", "N")	Name of month 5 of the Zemian calendar
+To Protect	Krye	-	=addGender("Kry", "v")	=IF(D307=B307, "Y", "N")	-
+To Rain	Nanapłyne	Verb of Rain	=createWord($C308, 0)	=IF(D308=B308, "Y", "N")	-
+To Reflect	Ƶoṉe	To Follow + To Return	=createWord($C309, 5, 3)	=IF(D309=B309, "Y", "N")	-
+To Regrow	Ƶyvepoṉe	Verb of Regrowth	=createWord($C310, 0)	=IF(D310=B310, "Y", "N")	Name of month 2 of the Zemian calendar
+To Relax	Ṉemurme	Verb of Leisure	=createWord($C311, 0)	=IF(D311=B311, "Y", "N")	-
+To Reproduce	Yopūoṉe	Verb of Reproduction	=createWord($C312, 0)	=IF(D312=B312, "Y", "N")	Name of month 4 of the Zemian calendar
+To Return	Kepoṉe	Verb of Return	=createWord($C313, 0)	=IF(D313=B313, "Y", "N")	-
+To Say	Vymiçe	-	=addGender("Vymiç", "v")	=IF(D314=B314, "Y", "N")	-
+To See	Zovere	-	=addGender("Zover", "v")	=IF(D315=B315, "Y", "N")	-
+To Sing	Çimvymibe	Verb of Song	=createWord($C316, 0)	=IF(D316=B316, "Y", "N")	-
+To Sit	Laksove	-	=addGender("Laksov", "v")	=IF(D317=B317, "Y", "N")	-
+To Smile	Biłe	-	=addGender("Bił", "v")	=IF(D318=B318, "Y", "N")	Name of month 6 of the Zemian calendar
+To Stabilise	Ƶtebe	Verb of Stable	=createWord($C319, 0)	=IF(D319=B319, "Y", "N")	Name of month 9 of the Zemian calendar
+To Survive	Yopaçe	Verb of Survive	=createWord($C320, 0)	=IF(D320=B320, "Y", "N")	Name of month 13 of the Zemian calendar
+To Swim	Sanapłyne	Verb of Swimmer	=createWord($C321, 0)	=IF(D321=B321, "Y", "N")	-
+To Take	Napre	-	=addGender("Napr", "v")	=IF(D322=B322, "Y", "N")	-
+To Thaw	Sūlpne	-	=addGender("Sūlpn", "v")	=IF(D323=B323, "Y", "N")	Name of month 3 of the Zemian calendar
+To Thirst	Ciłeyne	Verb of Thirsty	=createWord($C324, 0)	=IF(D324=B324, "Y", "N")	Name of month 7 of the Zemian calendar
+To Trade	Vanapre	To Give + To Take	=createWord($C325)	=IF(D325=B325, "Y", "N")	-
+To Unite	Yopşede	Verb of Union	=createWord($C326, 0)	=IF(D326=B326, "Y", "N")	Name of month 14 of the Zemian calendar
+To Use	Maƶie	-	=addGender("Maƶi", "v")	=IF(D327=B327, "Y", "N")	-
+To Walk	Saşemure	Verb of Walker	=createWord($C328, 0)	=IF(D328=B328, "Y", "N")	-
+To Want	Ƶapeyope	Some + To Have	=createWord($C329)	=IF(D329=B329, "Y", "N")	-
+To Wear	Kyre	-	=addGender("Kyr", "v")	=IF(D330=B330, "Y", "N")	-
+To Work	Łamure	Verb of Work	=createWord($C331, 0)	=IF(D331=B331, "Y", "N")	-
+Together	Yopūç	-	Yopūç	=IF(D332=B332, "Y", "N")	-
+Tool	Łana	-	=addGender("Łan", "f")	=IF(D333=B333, "Y", "N")	-
+Tortoise	Kryałdeṉī	Armour + Animal	=createWord($C334, 3)	=IF(D334=B334, "Y", "N")	-
+Towards	Ƶymurī	Of + Motion	=createWord($C335, 0)	=IF(D335=B335, "Y", "N")	-
+Trade	Vanaprevī	M Instance of To Trade	=createWord($C336, 0)	=IF(D336=B336, "Y", "N")	Instance noun i.e. a trade
+Tree	Ƶknabū	Plant + High	=createWord($C337, 3)	=IF(D337=B337, "Y", "N")	-
+Trousers	Załurbo	Cloth + Legs	=createWord($C338, 1, 2)	=IF(D338=B338, "Y", "N")	-
+Truth	Putna	-	=addGender("Putn", "f")	=IF(D339=B339, "Y", "N")	-
+Twenty	Ładū-Pū	20	=numberWord(C340)	=IF(D340=B340, "Y", "N")	-
+Two	Ładū	-	=addGender("Ład", "n")	=IF(D341=B341, "Y", "N")	Number
+Undead	Ṉkraçu	Not + Dead	=createWord($C342, 1)	=IF(D342=B342, "Y", "N")	-
+Union	Yopşeda	To Join + People	=addGender(createWord($C343, 2, 2), "F", true)	=IF(D343=B343, "Y", "N")	-
+Until	Çiƶymurī	Time + Towards	=createWord($C344)	=IF(D344=B344, "Y", "N")	-
+User	Maƶieşū	N Subject of To Use	=createWord($C345, 0)	=IF(D345=B345, "Y", "N")	-
+Village	Mnoliamī	Many + House	=createWord($C346, 2, 3)	=IF(D346=B346, "Y", "N")	-
+Walker	Saşemurī	Person + Motion	=createWord($C347)	=IF(D347=B347, "Y", "N")	-
+Warmth	Ƶyṉeçū	Soft + Heart	=createWord($C348, 2, 5)	=IF(D348=B348, "Y", "N")	-
+Water	Napłynī	Drink + Liquid	=createWord($C349, 6)	=IF(D349=B349, "Y", "N")	-
+We	Poko	-	=addGender("Pok", "p")	=IF(D350=B350, "Y", "N")	-
+Wet	Ƶynapłynī	Of + Water	=createWord($C351, 0)	=IF(D351=B351, "Y", "N")	-
+White	Ciłeşenū	All + Light	=createWord($C352)	=IF(D352=B352, "Y", "N")	-
+Whole	Ciłeta	-	=addGender("Ciłet", "f")	=IF(D353=B353, "Y", "N")	-
+Will	Ciłeçima	All + Time	=createWord($C354)	=IF(D354=B354, "Y", "N")	It will happen in all of the possible futures
+Wind	Nmurī	High + Motion	=createWord($C355, 3)	=IF(D355=B355, "Y", "N")	-
+Winter	Pūƶna	-	=addGender("Pūƶn", "f")	=IF(D356=B356, "Y", "N")	Season
+Within	Meyopam	Place + At	=createWord($C357, 5)	=IF(D357=B357, "Y", "N")	-
+Without	Ṉy	Not + Of	=createWord($C358, 1, 1)	=IF(D358=B358, "Y", "N")	-
+Woods	Saşknabū	Body + Tree	=createWord($C359, 3, 1)	=IF(D359=B359, "Y", "N")	-
+Work	Łamurī	Tool + Motion	=createWord($C360)	=IF(D360=B360, "Y", "N")	-
+World	Zemia	-	Zemia	=IF(D361=B361, "Y", "N")	-
+Wurm	Ƶmī	-	=addGender("Ƶm", "m")	=IF(D362=B362, "Y", "N")	-
+Yes	Pan	-	Pan	=IF(D363=B363, "Y", "N")	-
+You_Plur	Puło	-	=addGender("Puł", "p")	=IF(D364=B364, "Y", "N")	You' defaults to assuming singular
+You_Sing	Runa	-	=addGender("Run", "f")	=IF(D365=B365, "Y", "N")	You' defaults to assuming singular
+Yourself	Çeruna	Meta + You_Sing	=createWord($C366)	=IF(D366=B366, "Y", "N")	-
+Yourselves	Çepuło	Meta + You_Plur	=createWord($C367)	=IF(D367=B367, "Y", "N")	-
+Zero	Pū	-	=addGender("P", "n")	=IF(D368=B368, "Y", "N")	Number
+Jungle	Dētaşū	Shorthand for Dētaşknabū (the full word for Jungle)	Dētaşū	=IF(D369=B369, "Y", "N")	-
+Language	Fira	-	Fira	=IF(D370=B370, "Y", "N")	-
+Bar		-		=IF(D371=B371, "Y", "N")	As in metal bar or bar above a character (eg u -> ū). For the store: use 'table'
+King	Saşedetī	Person + Law	=createWord($C372, 1, 4)	=IF(D372=B372, "Y", "N")	-
+Emperor	Nabedetī	High + King	=createWord($C373, 1, 3)	=IF(D373=B373, "Y", "N")	-
+Sun	Saşedū	King + Star	=createWord($C374, 3, 3)	=IF(D374=B374, "Y", "N")	-
+Hair	Fūfī	-	=addGender("Fūf", "m")	=IF(D375=B375, "Y", "N")	-
+Hole	Skami	Small + _Place	=createWord($C376, 3, 1)	=IF(D376=B376, "Y", "N")	-
+Mouth	Çymi	Food + Hole	=createWord($C377, 2, 3)	=IF(D377=B377, "Y", "N")	-
+Frost-King	Ciłedetī	Frost + King	=createWord($C378, 3, 3)	=IF(D378=B378, "Y", "N")	Name of religion centred around worthip of the winter god
+Ṉkī	Ṉkī	-	Ṉkī	=IF(D379=B379, "Y", "N")	Minor nation in the Batsuri Isles
+I'm	Ropa Uçe	I am	=CONCATENATE(EngToFira("I"), " ", EngToFira("Am"))	=IF(D380=B380, "Y", "N")	-
+You're	Runa Uçe	You (s) are	=CONCATENATE(EngToFira("You_Sing"), " ", EngToFira("Are"))	=IF(D381=B381, "Y", "N")	-
+He's	Renī Uçe	He is	=CONCATENATE(EngToFira("He"), " ", EngToFira("Is"))	=IF(D382=B382, "Y", "N")	-
+She's	Rena Uçe	She is	=CONCATENATE(EngToFira("She"), " ", EngToFira("Is"))	=IF(D383=B383, "Y", "N")	-
+It's	Renū Uçe	It is	=CONCATENATE(EngToFira("It"), " ", EngToFira("Is"))	=IF(D384=B384, "Y", "N")	-
+We're	Poko Uçe	We are	=CONCATENATE(EngToFira("We"), " ", EngToFira("Are"))	=IF(D385=B385, "Y", "N")	-
+You're	Puło Uçe	You (p) are	=CONCATENATE(EngToFira("You_Plur"), " ", EngToFira("Are"))	=IF(D386=B386, "Y", "N")	-
+They're	Peło Uçe	They are	=CONCATENATE(EngToFira("They"), " ", EngToFira("Are"))	=IF(D387=B387, "Y", "N")	-
+Share		Give + Some	=createWord($C388, 0, 0)	=IF(D388=B388, "Y", "N")	
+			=createWord($C389, 0, 0)	=IF(D389=B389, "Y", "N")	
+			=EngToFira("To Give")	=IF(D390=B390, "Y", "N")	
+Descov Capital		Between + Lakes	Mīeramī	=IF(D391=B391, "Y", "N")	Temp name until transaltions for base words are done
+Gnomish	Yenƶeca	-	Yenƶeca	=IF(D392=B392, "Y", "N")	
+Crystal Mountain	Şūfmibū	Purple + Mountain	Şūfmibū	=IF(D393=B393, "Y", "N")	=createWord($C393, 1, 2) but with the ī replaced with an i
+				=IF(D394=B394, "Y", "N")	
+				=IF(D395=B395, "Y", "N")	
+				=IF(D396=B396, "Y", "N")	
+				=IF(D397=B397, "Y", "N")	
+				=IF(D398=B398, "Y", "N")	
+				=IF(D399=B399, "Y", "N")	
+				=IF(D400=B400, "Y", "N")	
+				=IF(D401=B401, "Y", "N")	
+				=IF(D402=B402, "Y", "N")	
