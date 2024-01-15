@@ -1,4 +1,7 @@
-""" Various tests for reading in the TSV file """ 
+""" Build a word list from teh given input TSV file
+    If a word is foudn more than once it will be added to the list more than once
+    If a child word is foudn that doesn't have its own row in the word file, it will NOT be added
+""" 
 import csv
 import re
 RULE_PREFIX = "_"
@@ -17,15 +20,10 @@ def read_tsv_file(file_path):
         header = next(tsv_reader, None)
 
         for row in tsv_reader:  
-
-            print(f"File row : {row}")
-
             if row[0] == "":
                 bad_row_count += 1
                 continue
-
             
-                  
             if row[0][0] == RULE_PREFIX:
                 rule_list.append(row)
             elif row[0][0].isalpha():
@@ -34,21 +32,6 @@ def read_tsv_file(file_path):
                 bad_row_count += 1
 
     return word_list, rule_list, bad_row_count
-
-# Replace 'data.csv' with the actual path to your CSV file
-file_path = 'Fira.tsv'
-result = read_tsv_file(file_path)
-
-# Display the result
-# for row in result[0]:
-#     print(f"Word: {row}")
-          
-# for row in result[1]:
-#     print(f"Rule: {row}")
-
-print(f"Total Words: {len(result[0])}")
-print(f"Total Rules: {len(result[1])}")
-print(f"Bad rows: {result[2]}")
 
 
 def find_sublist_by_word(word, list_of_lists):
@@ -64,50 +47,51 @@ def find_word_recursive(word, data_list, index=0, result=[]):
     related_words_list = []
     sub_word_result_list = []
 
-
-    print(f"find words: {word}, {index}, {len(data_list)}")
     if index >= len(data_list):
         return result
 
     matched_row = find_sublist_by_word(word, data_list)
     if matched_row:
-        print(f"Found row with {word} as first entry")
-        print(matched_row)
-        
 
         # Extract the related words from col 3 (index 2)
         related_words_str = matched_row[2]
         # related_words_list = re.findall(r'\b\w+\b', related_words_str)       
         related_words_list = re.split(r'\s*\+\s*', related_words_str)
- 
-        print(f"Related words:")
-        print(f"Related word str: {related_words_str}")
-        print(f"Related word list: {related_words_list}")
 
         for sub_word in related_words_list:
-
             sub_word_result_list = find_word_recursive(sub_word, data_list, index + 1)
-            print(f"recursive results for {sub_word}, {sub_word_result_list}")
-            # for res_word in sub_word_result_list:
-            #     result.append(res_word)
-
-        
 
     else:
         print(f"Didn't find row matching word {word}")
 
     if matched_row:
         result.append(word)
-    print(f"Returning Result - Word: {word} : {result}\n")
-    if len(result) == 0:
-        print(f"Word {word} does not have any valid child words")
+
     return result
 
 
+# Functions are defined, now run the code to import toe data, ask for a word adn build a list of all words in that word's hierarchy
 
+# Replace 'data.csv' with the actual path to your CSV file
+file_path = 'Fira.tsv'
+result = read_tsv_file(file_path)
+
+# Display the word and rules lists
+# for row in result[0]:
+#     print(f"Word: {row}")
+          
+# for row in result[1]:
+#     print(f"Rule: {row}")
+
+print(f"Total Words: {len(result[0])}")
+print(f"Total Rules: {len(result[1])}")
+print(f"Bad rows: {result[2]}")
+
+# Ask for user input
 search_word = input(" Lists built, now enter a word, to carry on to find all the rows related to that word")
 result_recursive = find_word_recursive(search_word, result[0])
 
+# Display the word list for the given word
 print(f"Related sub-lists for '{search_word}' using recursive approach:")
 if result_recursive:
     for sublist in result_recursive:
